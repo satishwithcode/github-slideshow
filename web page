@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <title>web page</title>
+    <style>
+      *{
+      margin: 1px;
+      padding: 0;
+      font-family: sans-serif;
+       }
+      .body{
+        width: 100%;
+        height: 100vh;
+        background-image: url("upimage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .top{
+        width: 100%;
+        margin: 12px;
+        font-size: large;
+        margin: 93px 53px;
+      }
+      .login{
+        position: relative;
+        background-color: rgb(226, 244, 250);
+        border: 2px solid red;
+        border-radius: 11px;
+        padding:2px 10px 2px 10px;        
+      }
+      .center{
+        text-align: center;
+        color: rgb(241, 221, 224);
+        margin: 12px;
+      }
+      .large{
+        font-size: 74px;
+      }
+      .li{
+        color: white;
+        margin: 3px 2px 4px 49px;
+      }
+      .h2{
+        font-size: 34px;
+        margin: 3px 2px 4px 29px;
+      }
+      .place{
+        margin:72px 2px 2px 12px;
+      }
+      .mar{
+        width: 70%;
+        padding: 93px 32px 33px 250px;
+        margin: 3px;
+        transform: translateY(-80%);
+        font-size: 23px;
+      }
+      .side-bar{
+        width: 200px;
+        height: 100vh;
+        position: absolute;
+        right: 0px;
+        top: 30px;
+      }
+      .li2{
+        margin: 2px;
+      }
+      .ul{
+        margin: 10px;
+      }
+      .h4{
+        font-size: 30px;
+        font-style: oblique;
+        text-shadow: 5px 3px 5px palevioletred ;
+
+      }
+      .hr{
+        border: 1px double red;
+      }
+      .details{
+        position:relative;
+        background-color: rgb(205, 245, 245);
+        font-size: large;
+        margin: 3px;
+        padding: 3px;
+        border-radius: 5px;
+        border: 2px none red;
+      }
+      .book{
+        text-align: right;
+        transform: translateY(-200%);
+        font-size: 27px;
+        text-shadow: 3px 3px 3px greenyellow;
+        margin: 23px;
+      }
+      .body2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container{
+        position: relative;
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-wrap: wrap;
+        padding: 30px;
+        top: 60px;
+      }
+      .container .card{
+        position: relative;
+        max-width: 300px;
+        height: 200x;
+        background: rgb(91, 213, 230);
+        margin: 153px 1px;
+        padding: 20px 5px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 202px rgb(228, 162, 39);
+        transition: 0.3s ease-in-out;
+      }
+      .container .card:hover{
+        height: 500px;
+      }
+      .container .card .imgbx{
+        position: relative;
+        width: 260px;
+        height:380px;
+        top: -80px;
+        left: 20px;
+        z-index: 1;
+        box-shadow: 0 5px 20px grey;
+      }
+      .container .card .imgbx img{
+        max-width: 100%;
+        border-radius: 5px;
+      }
+      .container .card .content{
+        position: relative;
+        margin-top: -210px;
+        padding: 12px 16px;
+        text-align: center;
+        color: green;
+        visibility: hidden;
+        appearance: none;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+      }
+      .container .card:hover .content{
+        visibility: visible;
+        opacity: 1;
+        margin-top: -60px;
+        transition-delay: 0.3s;
+      }
+    </style>
+    <script>
+      function date(){
+         document.getElementById("p1").innerHTML="Varansi 23 mar 2021.   Mathura 24 Mar 2021.  Badrinath 25 Mar 2021.        Kedarnath 26 Mar 2021.  Kasol 28 Mar 2021.  Prayagraj 29 Mar 2021";
+        }
+        function trip(){
+          document.getElementById("p2").innerHTML="7 Day trip khana pina rehna free";
+        }
+        function squrity(){
+          document.getElementById("p3").innerHTML="Cepture your all moment in cctv";
+        }
+    </script>
+  </head>
+  <body bgcolor="grey">
+    <div class="body">
+      <div class="top">
+        <a class="login" href="l15.html">Login</a>
+      </div>
+      <div class="center">
+        <h1><large class="large">Welcome to</large> <br>Yuth trevel Agensi</h1>
+      </div>
+      <div class="place">
+        <h2 class="h2">Place</h2>
+        <ul>
+          <li class="li">Varansi</li>
+          <li class="li">Mathura</li>
+          <li class="li">Badrinath</li>
+          <li class="li">kedarnath</li>
+          <li class="li">Kasol</li>
+          <li class="li">Prayagraj</li>
+        </ul>
+      </div>
+      <div><h4 class="book">Book the selective<br> places tecket on this site.</h4></div>
+      <div class="mar">
+      <h3 ><marquee behavior="" direction="">Specel Offer Of kasol</marquee></h3>
+      </div>
+      <div class="side-bar">
+        <h4 class="h4">Menu</h4>
+        <hr class="hr" width="63%">
+        <ul id="ul">
+          <p id="p1">Date datails</p>
+          <li><button class="details" onclick="date();">Date</button></li>
+          <p id="p2"></p>
+          <li><button class="details" onclick="trip();">Trip</button></li>
+          <p id="p3"></p>
+          <li><button class="details" onclick="squrity();">squrity</button></li>
+        </ul>
+      </div>
+    </div> 
+    <div class="body2">
+      <div class="container">
+        <div class="card">
+          <div class="imgbx">
+            <img src="tracking1.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>Owner</h2>
+            <p>My name is Satish Yadav.I am the owner of this site. Create this site main purpos is thos pepole are going to tirth yatra easly book the tecket's where how are going. </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbx">
+            <img src="tracking2.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>First Partner</h2>
+            <p>My name is sp singh.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgbx">
+            <img src="tracking3.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>Second Partner</h2>
+            <p>Ye dono mere Partner hai ye idea dete hai mai us idea pr kam krta hu. Baki ye dono chutiye bhi h pr dost hai  ab dekhn aye hai es text pr dhyan ko dena hai</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
